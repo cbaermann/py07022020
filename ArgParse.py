@@ -2,6 +2,7 @@
 import argparse
 import requests
 
+
 def main():
     if args.ip:
         ipToLookup = args.ip 
