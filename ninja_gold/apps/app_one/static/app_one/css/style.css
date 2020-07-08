@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    text-align: center;
+}
+
+h2{
+    margin-top: 20px;
+}
+
+.box{
+    display: inline-block;
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: #75a753;
+    box-shadow: 3px 3px;
+}
+
+h4{
+    margin-top: 60px;
+}
+
+input{
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+    background-color: gold;
+    height: 30px;
+    width: 100px;
+    font-size: 12pt;
+    border: 2px solid black;
+    box-shadow: 2px 2px black;
+}

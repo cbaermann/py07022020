@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ninja Gold</title>
+        <meta charset="UTF-8">
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'app_one/css/style.css' %}">
+    </head>
+
+    <body>
+        <div class="container">
+            <h2>Your Gold: {{gold}}</h2>
+            <div class="box">
+                <h1>Farm</h1>
+                <h4>(earns 10-20 gold)</h4>
+                <form action="/process_money" method="post">
+                    {% csrf_token %}
+                    <input type="hidden" name="location" value="farm">
+                    <input class="button" type="submit" value="Find Gold">
+                </form>
+            </div>
+            <div class="box">
+                <h1>Cave</h1>
+                <h4>(earns 5-10 gold)</h4>
+                <form action="/process_money" method="post">
+                    {% csrf_token %}
+                    <input type="hidden" name="location" value="cave">
+                    <input class="button" type="submit" value="Find Gold">
+                </form>
+            </div>
+            <div class="box">
+                <h1>House</h1>
+                <h4>(earns 2-5 gold)</h4>
+                <form action="/process_money" method="post">
+                    {% csrf_token %}
+                    <input type="hidden" name="location" value="house">
+                    <input class="button" type="submit" value="Find Gold">
+                </form>
+            </div>
+            <div class="box">
+                <h1>Casino</h1>
+                <h4>(earns/takes 0-50 gold)</h4>
+                <form action="/process_money" method="post">
+                    {% csrf_token %}
+                    <input type="hidden" name="location" value="casino">
+                    <input class="button" type="submit" value="Find Gold">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
